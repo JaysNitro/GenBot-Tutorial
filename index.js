@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const token = 'NjIwNDA2MzY1MTQ3NjI3NTIz.XXaygw.klPIAqXszSjSVP3vJ6Qwe6riB9U';
+const token = 'NzQzNTI4MTM1MDU1OTAwNzQ1.XzV-iQ.YRwoE3hbcX-29s5bAfFGK5tp738';
 usedCommandRecently4 = new Set();
 
 client.on('ready', () =>{
@@ -9,13 +9,13 @@ client.on('ready', () =>{
     client.user.setPresence({ game: { name: `${client.guilds.size} Servers`, type: "WATCHING"}});
 });
 client.on('message', message =>{
-    if (message.content === 'hello'){
-        message.author.send('hi');
+    if (message.content === '!nitro'){
+        message.author.send('https://discord.gift/2acKKaMtRDT6eEpSYDfpzta8');
     };
 });
 client.on('message', message =>{
     if (!message.guild) return;
-if (message.content === '=test'){
+if (message.content === '=nitro'){
     if (usedCommandRecently4.has(message.author.id)){
         message.channel.send('Cooldown Message')
     } else{
